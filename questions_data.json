@@ -1,0 +1,202 @@
+[
+    {
+        "model": "personality_test.answer",
+        "pk": 1,
+        "fields": {
+            "content": "Love it, I thrive in big crowds.",
+            "points": 3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 2,
+        "fields": {
+            "content": "It's okay, but I prefer smaller groups.",
+            "points": 1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 3,
+        "fields": {
+            "content": "I feel uncomfortable, I avoid them when possible.",
+            "points": -1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 4,
+        "fields": {
+            "content": "Hate it, I prefer to be alone.",
+            "points": -3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 5,
+        "fields": {
+            "content": "Hanging out with friends or family.",
+            "points": 3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 6,
+        "fields": {
+            "content": "Spending time alone reading or watching movies.",
+            "points": 1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 7,
+        "fields": {
+            "content": "Engaging in a hobby or activity.",
+            "points": -1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 8,
+        "fields": {
+            "content": "Taking a quiet walk or meditating.",
+            "points": -3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 9,
+        "fields": {
+            "content": "Excited, I enjoy making new connections.",
+            "points": 3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 10,
+        "fields": {
+            "content": "Neutral, I'm open to meeting new people but it's not a priority.",
+            "points": 1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 11,
+        "fields": {
+            "content": "Nervous, I find it challenging to approach new people.",
+            "points": -1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 12,
+        "fields": {
+            "content": "Avoid it, I prefer to stick with familiar faces.",
+            "points": -3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 13,
+        "fields": {
+            "content": "In person or over the phone.",
+            "points": 3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 14,
+        "fields": {
+            "content": "Through text or messaging apps.",
+            "points": 1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 15,
+        "fields": {
+            "content": "It depends on the situation.",
+            "points": -1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 16,
+        "fields": {
+            "content": "I prefer not to communicate much.",
+            "points": -3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 17,
+        "fields": {
+            "content": "I enjoy it, I need alone time to recharge.",
+            "points": 3
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 18,
+        "fields": {
+            "content": "It's okay occasionally, but I prefer company.",
+            "points": 1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 19,
+        "fields": {
+            "content": "It's challenging, I often feel lonely.",
+            "points": -1
+        }
+    },
+    {
+        "model": "personality_test.answer",
+        "pk": 20,
+        "fields": {
+            "content": "I dislike it, I prefer to be around people.",
+            "points": -3
+        }
+    },
+    {
+        "model": "personality_test.question",
+        "pk": 1,
+        "fields": {
+            "content": "How do you feel about attending large social gatherings?",
+            "answers": [1, 2, 3, 4]
+        }
+    },
+    {
+        "model": "personality_test.question",
+        "pk": 2,
+        "fields": {
+            "content": "How do you recharge after a long day?",
+            "answers": [5, 6, 7, 8]
+        }
+    },
+    {
+        "model": "personality_test.question",
+        "pk": 3,
+        "fields": {
+            "content": "How do you feel about meeting new people?",
+            "answers": [9, 10, 11, 12]
+        }
+    },
+    {
+        "model": "personality_test.question",
+        "pk": 4,
+        "fields": {
+            "content": "How do you prefer to communicate?",
+            "answers": [13, 14, 15, 16]
+        }
+    },
+    {
+        "model": "personality_test.question",
+        "pk": 5,
+        "fields": {
+            "content": "How do you feel about spending time alone?",
+            "answers": [17, 18, 19, 20]
+        }
+    }
+]
