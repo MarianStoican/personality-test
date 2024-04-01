@@ -11,5 +11,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+RUN chmod +x run.sh
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+RUN sed -i 's/\r//' run.sh
+
+CMD ["bash", "./run.sh"]
