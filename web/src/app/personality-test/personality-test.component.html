@@ -1,7 +1,7 @@
 <div class="card-wrapper">
     <p-card class="card">
         <p class="small-text">Question {{currentQuestionIndex + 1}}/{{questions.length}}</p>
-        <p class="big-text">{{questions[currentQuestionIndex]?.content}}</p>
+        <p class="big-text" *ngIf="questions && questions.length > 0">{{questions[currentQuestionIndex].content}}</p>
         <p class="small-text italic-text">All question are required</p>
         <div class="answers-buttons-wrapper">
             <button class="answer-button" *ngFor="let answer of questions[currentQuestionIndex]?.answers; let i=index"
