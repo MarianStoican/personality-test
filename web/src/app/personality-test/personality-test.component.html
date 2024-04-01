@@ -1,0 +1,34 @@
+<div class="card-wrapper">
+    <p-card class="card">
+        <p class="small-text">Question {{currentQuestionIndex + 1}}/{{questions.length}}</p>
+        <p class="big-text">{{questions[currentQuestionIndex]?.content}}</p>
+        <p class="small-text italic-text">All question are required</p>
+        <div class="answers-buttons-wrapper">
+            <button class="answer-button" *ngFor="let answer of questions[currentQuestionIndex]?.answers; let i=index"
+                (click)="selectAnswer(answer)"
+                [ngClass]="answer.points === result?.[currentQuestionIndex] ? 'button-active' : ''">
+                <p class="avatar" [ngClass]="answer.points === result?.[currentQuestionIndex] ? 'avatar-active' : ''">
+                    {{getChar(i)}}
+                </p>
+                {{answer.content}}
+            </button>
+        </div>
+        <div class="actions-buttons-wrapper">
+            <button [disabled]='currentQuestionIndex === 0' class="action-button" (click)="prevQuestion()">Prev
+                question</button>
+            <button [hidden]="currentQuestionIndex === questions.length - 1" class="action-button"
+                [disabled]='result?.[currentQuestionIndex] === undefined' (click)="nextQuestion()">Next
+                question</button>
+            <button [hidden]="currentQuestionIndex != questions.length - 1"
+                [disabled]='result?.[currentQuestionIndex] === undefined' class="action-button"
+                (click)="submitResult()">Submit</button>
+        </div>
+    </p-card>
+</div>
+<p-dialog header="Test result" [(visible)]="showResultDialog" [modal]="true" (onHide)="onDialogClose()"
+    [style]="{width: '25vw'}">
+    <div class="result-wrapper">
+        <img class="result-icon" [src]="iconPath">
+        <p class="big-text">{{testResult}}</p>
+    </div>
+</p-dialog>

@@ -1,0 +1,7 @@
+@layer base, primeng, app;
+
+:root {
+    --text-color: #193f56 !important;
+    --background-color: #95ccd5 !important;
+    --roboto-font: Roboto, Arial, sans-serif;
+}
